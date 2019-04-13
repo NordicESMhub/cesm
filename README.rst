@@ -1,6 +1,10 @@
+
 ==================================
  The Community Earth System Model
 ==================================
+
+
+**See NordicESMHub documentation at https://github.com/NordicESMhub/cesm/blob/master/UpdateNordicESMhub.md**.
 
 See the CESM web site for documentation and information:
 
