@@ -1,4 +1,110 @@
 ===============================================================
+Tag name: cesm2_2_alpha03a
+Originator(s): CSEG
+Date: 24 June 2019
+One-line Summary: CAM and POP updates
+
+
+components/cam                     https://svn-ccsm-models.cgd.ucar.edu/cam1/trunk_tags/cam6_1_026/components/cam         **
+components/cice                    https://github.com/ESCOMP/CESM_CICE5/tree/cice5_20190322                               --
+cime                               https://github.com/CESM-Development/cime/tree/cime5.8.1                                --
+components/cism                    https://github.com/ESCOMP/cism-wrapper/tree/cism2_1_67                                 --
+components/clm                     https://github.com/ESCOMP/ctsm/tree/bldlib4cime58.n01_ctsm1.0.dev030                   --
+components/mosart                  https://github.com/ESCOMP/mosart/tree/bldlib4cime58.n01_mosart1_0_31                   --
+components/pop                     https://svn-ccsm-models.cgd.ucar.edu/pop2/trunk_tags/cesm_pop_2_1_20190410             **
+components/rtm                     https://github.com/ESCOMP/rtm/tree/bldlib4cime58.n01_rtm1_0_66 	                  --
+components/ww3                     https://svn-ccsm-models.cgd.ucar.edu/ww3/trunk_tags/ww3_190402 	                  --
+
+cam
+    Brian Eaton 2019-06-21 - trunk_tags/cam6_1_026 - components/cam (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/cam1/trunk_tags/cam6_1_026
+
+    Updates to SE/CSLAM.
+    BFB except for SE configurations.
+
+
+    Cheryl Craig 2019-06-04 - trunk_tags/cam6_1_025 - components/cam (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/cam1/trunk_tags/cam6_1_025
+
+    Update CLUBB library and introduce SILHS to CAM trunk
+
+    Changes answers for all CAM6 runs (will need tuning)
+
+
+    Francis Vitt 2019-05-29 - trunk_tags/cam6_1_024 - components/cam (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/cam1/trunk_tags/cam6_1_024
+
+    WACCM-X enhancements
+
+     . Implement ringAV filter option for O+ transport in the ionosphere which
+       is a better filtering option than FFT for higher resolutions
+     . Make adjustments to ion/electron temperature module
+       -- remove background heat flux at equator (Hanli Lui and Wenbin Wang)
+     . Add FC6XSD and FC6XHIST compsets (WACCM-X with CAM6 physics)
+
+
+    Francis Vitt 2019-05-20 - trunk_tags/cam6_1_023 - components/cam (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/cam1/trunk_tags/cam6_1_023
+
+    Fix WACCM-X temperature bug
+
+
+    Francis Vitt 2019-04-22 - trunk_tags/cam6_1_021 - components/cam (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/cam1/trunk_tags/cam6_1_021
+
+    Corrections to aerosol surface area densities used in chemistry
+
+
+    Cheryl Craig 2019-04-16 - trunk_tags/cam6_1_020 - components/cam (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/cam1/trunk_tags/cam6_1_020
+
+    Merge in Jim's buildlib changes
+
+
+    Brian Eaton 2019-04-01 - trunk_tags/cam6_1_019 - components/cam (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/cam1/trunk_tags/cam6_1_019
+
+    . Bug fix in code that was added to verify that both vector components are
+      output when interpolated output is requested.  This only impacts SE.
+
+    . Bug fix for issue raised on BB about missing outfld call for DP_CLD when
+      clubb is used.
+
+
+    Brian Eaton 2019-03-18 - trunk_tags/cam6_1_017 - components/cam (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/cam1/trunk_tags/cam6_1_017
+
+    SE/CSLAM updates
+    Fix for mixing_ratio attribute
+    This tag is BFB except when using SE dycore.
+    This tag doesn't have the mods needed for the update to cime5.8.
+
+
+    Chris Fischer 2019-04-01 - trunk_tags/cam6_1_018 - components/cam (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/cam1/cam6_1_018
+
+    Update support for ne30np4 and ne30np4.pg3 grids.
+
+
+cesm
+    Chris Fischer 2019-04-18 - cesm2_2_alpha03a - (cesm2_2_alpha03a)
+    https://github.com/ESCOMP/cesm/tags/cesm2_2_alpha03a
+
+    Update to manage_externals v1.1.6.  Add ability to pass --ignore-ancestry to svn switch
+
+
+pop
+    Michael Levy 2019-04-10 - trunk_tags/cesm_pop_2_1_20190410 - components/pop (cesm2_2_alpha03a)
+    https://svn-ccsm-models.cgd.ucar.edu/pop2/trunk_tags/cesm_pop_2_1_20190410
+
+    Add support for more pe-layouts
+    -- having a task where nblocks_clinic = 0 no longer aborts
+    -- better support for tasks where 1 <= nblocks_clinic < max_blocks_clinic
+       (prior to this tag these cases failed DEBUG tests, unsure if they ran
+       outside of DEBUG mode)
+
+
+===============================================================
 Tag name: cesm2_2_beta02
 Originator(s): CSEG
 Date: 12 April 2019
