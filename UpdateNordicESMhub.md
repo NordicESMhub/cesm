@@ -22,6 +22,14 @@ For now, we support Norwegian Sigma-2 HPCs. Feel free to add new platforms. If y
 - [release-noresm2.0.1](https://github.com/NordicESMhub/cesm/tree/release-noresm2.0.1)
 - [release-noresm2.1.0](https://github.com/NordicESMhub/cesm/tree/release-noresm2.1.0)
 
+To get a release:
+
+```
+git clone -b release-noresm2.1.0 https://github.com/NordicESMhub/cesm.git 
+```
+
+Then follow instructions as recommended as CESM documentation.
+
 # Contact/Join us
 
 <a href="https://nordicesmhub.zulipchat.com/"><img src="https://img.shields.io/badge/join%20us-on%20zulip-blue.svg"></a>
